@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var player = {
+            hp: 200,
+            mp: 300,
+        };
+
+        var items = {
+            "gun": 200,
+            "sword": 500,
+        };
+
+        
+        var foo = function(val) {
+            alert(val);
+        }
+        var bar = foo;
+
+        Object.keys(items).forEach(function (key) {
+            foo(key)
+            bar(items[key])
+        });
+
+        for(key in items){
+            foo(key)
+            bar(items[key])
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

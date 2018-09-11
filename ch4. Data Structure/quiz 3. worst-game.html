@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var gameReviewScores = {
+            "Super Mario Odyssey": 97,
+            "Legend of Zelda: Breath of the Wild": 97,
+            "Sonic Mania": 86,
+            "Sonic Forces": 99,
+        };
+
+        gameReviewScores["Sonic Forces"] = 55;
+
+        var worstGameName = "Super Mario Odyssey";
+        var worstScore = gameReviewScores[worstGameName];
+
+        Object.keys(gameReviewScores).forEach(function (key) {
+            if (gameReviewScores[key] < worstScore) {
+                worstScore = gameReviewScores[key];
+                worstGameName = key;
+            }
+        });
+
+        alert("Worst game in 2017: " + worstGameName);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

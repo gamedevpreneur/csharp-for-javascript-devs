@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        if ("1" == 1) {
+            alert('"1" == 1 is true');
+        }
+
+        if ("1" === 1) {
+            alert(`but "1" === 1 isn't true`);
+        }
+
+        var someProblem = false;
+
+        if(someProblem) {
+            throw "you can throw string in JS";
+        }
+
+        var sum = 0;
+
+        for(var i = 0; i < 100; i++) {
+            sum += i;
+        }
+
+        alert(sum);
+
+        var enemies = ["Bowser", "Dr. Eggman", "Ganon",  ];
+
+        enemies.forEach(name => {
+            alert(name);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

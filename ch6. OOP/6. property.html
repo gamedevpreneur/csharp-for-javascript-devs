@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        const player = {
+            attackPoint: 60,
+        };
+
+        var attackPoint = 60;
+        Object.defineProperty(player, 'attackPoint', {
+            get: function() { return attackPoint; },
+            set: function(value) {
+                if (value >= 100) {
+                    value = 100;
+                }
+
+                attackPoint = value;
+            }
+        });
+
+        player.attackPoint = 300;
+        alert(player.attackPoint); // 100
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

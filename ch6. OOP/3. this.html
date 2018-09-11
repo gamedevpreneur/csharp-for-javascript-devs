@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        class Player {
+            constructor(name) {
+                this.name = name;
+                this.hp = 300;
+            }
+
+            gotAttack(attackPoint) {
+                this.hp -= attackPoint;
+            }
+        };
+
+        var p = new Player("Asuna");
+        p.gotAttack(50);
+        alert(p.hp);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

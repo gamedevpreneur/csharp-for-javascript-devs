@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        class Rabbit {
+            throwCarrot() {
+                alert("throw one carrot");
+            }
+        }
+
+        class BossRabbit extends Rabbit {
+            throwCarrot() {
+                alert("throw 3 carrots");
+            }
+        }
+
+        var rabbit = new Rabbit(); 
+        rabbit.throwCarrot(); // throw one carrot.
+        var bossRabbit = new BossRabbit();
+        bossRabbit.throwCarrot(); // throw 3 carrots.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
